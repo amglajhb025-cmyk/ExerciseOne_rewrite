@@ -30,6 +30,16 @@ class TestFunctions(unittest.TestCase):
         self.assertEqual(find_number_of_even_numbers([1, 2, 3, 4, 5, 6]), 3)
         self.assertEqual(find_number_of_even_numbers([1, 2, 3, 4, 5, 6, 7, 8]), 4)
 
+    def test_reverse_sentence(self):
+        self.assertEqual(reverse_sentence("Hello World"), "world hello")
+        self.assertEqual(reverse_sentence("I lovE PyThoN"), "python love i")
+        self.assertEqual(reverse_sentence("Python"), "python")
+
+    def test_reverse_word(self):
+        self.assertEqual(reverse_word("Hello World"), "olleh dlrow")
+        self.assertEqual(reverse_word("I lovE PyThoN"), "i evol nohtyp")
+        self.assertEqual(reverse_word("Python"), "nohtyp")        
+
     def test_5_square(self):
         text_capture = StringIO()
         sys.stdout = text_capture
