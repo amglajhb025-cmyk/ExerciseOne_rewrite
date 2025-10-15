@@ -38,7 +38,10 @@ class TestFunctions(unittest.TestCase):
     def test_reverse_word(self):
         self.assertEqual(reverse_word("Hello World"), "olleh dlrow")
         self.assertEqual(reverse_word("I lovE PyThoN"), "i evol nohtyp")
-        self.assertEqual(reverse_word("Python"), "nohtyp")        
+        self.assertEqual(reverse_word("Python"), "nohtyp") 
+
+    def test_count_vowels(self):
+        self.assertEqual(count_vowels("amawethu has red lips"), 7)       
 
     def test_5_square(self):
         text_capture = StringIO()
