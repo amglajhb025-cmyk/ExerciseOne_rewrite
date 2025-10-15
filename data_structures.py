@@ -37,6 +37,18 @@ def draw_square(height: int) -> None:
 
     """
 
+
+def reverse_sentence(text):
+    """
+    Reverse sentence
+    """
+
+
+def reverse_word(text):
+    """
+    Reverse each word in a sentence
+    """
+
 # ------------------- First write tests and the make the functions below pass those tests -----------------------
 
 def fibonacci(n):
